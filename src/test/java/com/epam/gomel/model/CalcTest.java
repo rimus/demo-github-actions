@@ -26,6 +26,12 @@ public class CalcTest {
         Assert.assertEquals(actualSum, expectedSum, "Method sum doesn't work or your test data is invalid.");
     }
 
+    @Test(description = "Test for sum of 5 terms")
+    public void testSumForFiveTerms() {
+        int actualSum = calc.sum(1, 2, 3, 4, 5);
+        Assert.assertEquals(actualSum, 15, "Method sum doesn't work or your test data is invalid.");
+    }
+
     @DataProvider(name = "Data for testSub")
     public Object[][] dataProviderForTestSub() {
         return new Object[][]{
